@@ -16,6 +16,6 @@ int main() {
 
 	Laptop laptop2;
 	laptop2 = laptop;
-	//laptop2.SetColor("white");
+	laptop2.SetColor("white");
 	laptop2.PrintInf();
 }

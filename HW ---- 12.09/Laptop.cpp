@@ -100,11 +100,11 @@ Laptop::Laptop(const char* name, const char* color, const char* cpu_model, doubl
 
 Laptop::Laptop(const Laptop& laptop)
 {
-	this->name = new char[strlen(name) + 1];
-	strcpy_s(this->name, strlen(name) + 1, name);
+	this->name = new char[strlen(laptop.name) + 1];
+	strcpy_s(this->name, strlen(laptop.name) + 1, laptop.name);
 
-	this->color = new char[strlen(color) + 1];
-	strcpy_s(this->color, strlen(color) + 1, color);
+	this->color = new char[strlen(laptop.color) + 1];
+	strcpy_s(this->color, strlen(laptop.color) + 1, laptop.color);
 
 	this->price = AllPrice;
 	count++;
